@@ -25,7 +25,7 @@ function NavBar() {
           <div className=' flex justify-end items-center pr-5 gap-4  sm:w-full'>
             <Link href={'/admin'}></Link>
             <Link href={'/dashbord'}></Link>
-            <Link href={'/cart'} >Cart</Link>
+            <Link href={'/carrinho'} >Cart</Link>
             
           </div>
           

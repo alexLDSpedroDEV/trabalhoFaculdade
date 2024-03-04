@@ -1,4 +1,4 @@
-interface MeuFood {
+export interface MeuFood {
     id: number,
     name: string,
     value: number,

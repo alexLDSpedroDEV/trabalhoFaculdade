@@ -34,7 +34,7 @@ function sideBar() {
                                 <Link  href={'/sobremesas'} className='w-[100%] bg-red-200 flex justify-center items-center hover:bg-red-700 cursor-pointer rounded-md mb-3'>
                                     <h1 className=' text-black font-semibold text-xl'>Sobremesa</h1>
                                 </Link>
-                                <Link  href={'/hamburguer'} className='w-[100%] bg-red-200 flex justify-center items-center hover:bg-red-700 cursor-pointer rounded-md'>
+                                <Link  href={'/carrinho'} className='w-[100%] bg-red-200 flex justify-center items-center hover:bg-red-700 cursor-pointer rounded-md'>
                                     <h1  className=' text-black font-semibold text-xl'>Seu Pedido</h1>
                                 </Link>
                             </div>
