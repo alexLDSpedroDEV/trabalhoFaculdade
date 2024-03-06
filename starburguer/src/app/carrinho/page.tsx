@@ -6,6 +6,7 @@ import Image from 'next/image';
 import sobremesa1 from '@/../../image/sobremesa1.png'
 
 
+
 import SideBar from '@/components/sideBar';
 import Link from 'next/link';
 
@@ -27,7 +28,23 @@ function page() {
                         {
 
                             FoodItens.map((item: any, index: number) => (
-                                <div key={index} className='p-2 hover:cursor-pointer grid justify-center items-center xl:w-[97%] sm:w-[97%] sm:m-3 w-[97%]  h-[18vh] p-0 rounded-xl hover:bg-yellow '>
+                                <div key={index} className=' hover:cursor-pointer grid justify-center items-center xl:w-[97%] sm:w-[97%] sm:m-3 w-[97%]  h-[18vh] p-0 rounded-xl hover:bg-yellow '>
+                                    <div className='grid grid-cols-4 gap-7'>
+                                        <div>
+                                            <Image src={sobremesa1} alt="Food" width={120} height={120}/>
+                                        </div>
+                                        <div className='grid justify-center items-center' >
+                                            <h3 className=' text-xl font-bold'>{item.name}</h3>
+                                        </div>
+                                        <div className='grid justify-center items-center'>
+                                            <h1 className=' text-xl font-bold'>$ {item.value}</h1>
+                                        </div>
+                                        <div className='grid grid-cols-3 justify-center items-center gap-3'>
+                                            <div className=' bg-black text-yellow text-center grid justify-center rounded-xl'>-</div>
+                                            <div className=' bg-black text-yellow text-center grid justify-center rounded-xl w-[45px]'>19</div>
+                                            <div className=' bg-black text-yellow text-center grid justify-center rounded-xl'>+</div>
+                                        </div>
+                                    </div>
 
                                     
                                     
