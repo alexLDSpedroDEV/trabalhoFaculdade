@@ -8,12 +8,13 @@ export interface MeuFood {
 }
 
 
+
 const foods: MeuFood[] = [
     {
         id: 1,
         name: "silician", 
         type: "hamburguer",
-        image: '../../image/hamburguer1.png',
+        image: "hamburguer0",
         value: 24.9,
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo mollitia ea veniam officiis atque facere tenetur cum quisquam fugit consectetur possimus est obcaecati minus sint quos, aliquam, dolorem eius at."
         

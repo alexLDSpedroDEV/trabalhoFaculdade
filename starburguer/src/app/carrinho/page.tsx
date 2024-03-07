@@ -10,11 +10,13 @@ import sobremesa1 from '@/../../image/sobremesa1.png'
 import SideBar from '@/components/sideBar';
 import Link from 'next/link';
 
-
-
+let valor: number = 10;
 
 function page() {
 
+    function addValue(props: number) {
+        props++
+    }
 
     return (
         <div className='bg-black'>
@@ -41,7 +43,7 @@ function page() {
                                         </div>
                                         <div className='grid grid-cols-3 justify-center items-center gap-3'>
                                             <div className=' bg-black text-yellow text-center grid justify-center rounded-xl'>-</div>
-                                            <div className=' bg-black text-yellow text-center grid justify-center rounded-xl w-[45px]'>19</div>
+                                            <div className=' bg-black text-yellow text-center grid justify-center rounded-xl w-[45px]'>{valor}</div>
                                             <div className=' bg-black text-yellow text-center grid justify-center rounded-xl'>+</div>
                                         </div>
                                     </div>
