@@ -2,14 +2,18 @@
 import React, { useEffect, useState } from 'react'
 import FoodItens from '../../components/foods'
 import Image from 'next/image';
-import porcoes1 from '@/../../image/porcoes1.png'
-
-
+import porcoes1 from './/../../../image/porcoes1.png'
 import SideBar from '@/components/sideBar';
 
 
+
+import { CarrinhoProdutos } from '@/components/carrinhoProduts';
+
 function page() {
 
+    const enviarPedido = (props: any) => {
+        CarrinhoProdutos.addNewFoods(props)
+    }
 
     return (
         <div className='bg-black'>
@@ -22,13 +26,13 @@ function page() {
                             FoodItens.map((item: any, index: number) => (
                                 <div key={index} className='hover:cursor-pointer grid justify-center items-center xl:w-[20vw] sm:w-[20vw] sm:m-3 w-[90vw]  h-[50vh] p-0 rounded-xl hover:bg-yellow '>
                                     
-                                    <Image className='m-auto ' src={porcoes1} alt={item.name} width={200} height={200} />
+                                    <Image className='m-auto ' src={`${item.image}`} alt={item.name} width={200} height={200} />
                                     <div className='mt-1 grid grid-cols-2 justify-between items-center align-middle text-black'>
                                         <h2 className='sm:text-[25px] font-bold text-[30px] p-4'>{item.name}</h2>
                                         <h2 className='text-end  text-[25px] font-bold sm:text-[18px]'>$ {item.value}</h2>
                                     </div>
                                     {/* <p>{item.text}</p> */}
-                                    <button className='text-center rounded-md p-4 bg-black sm:p-2 text-yellow sm:text-[12px]'>ADD TO CART</button>
+                                    <button className='text-center rounded-md p-4 bg-black sm:p-2 text-yellow sm:text-[12px]' onClick={() => enviarPedido(item)}>ADD TO CART</button>
                                 </div>
                             ))
                         }
