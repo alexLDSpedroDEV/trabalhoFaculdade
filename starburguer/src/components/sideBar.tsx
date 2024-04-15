@@ -11,9 +11,9 @@ function sideBar() {
 
     
     return (
-        <div className='bg-black w-[25vw] col-span-1 '>
+        <div className='bg-black md:block hidden w-[30vw] lg:w-[25vw] col-span-1 '>
             <div className='grid grid-cols-2 w-screen'>
-                <div className='w-[25vw] max-w-[500px] h-[auto]  grid grid-cols-1 grid-row-2'>
+                <div className='lg:w-[25vw] grid fixed max-w-[500px] h-[auto]  grid-cols-1 grid-row-2'>
                     <div className=' h-[100vh]'>
                         {/* div da logo */}
                         <div className='h-[35vh] grid justify-center items-center '>
@@ -21,7 +21,7 @@ function sideBar() {
                         </div>
                         {/* div do menu lateral */}
                         <div className='w-[100%] h-[65vh] m-auto grid justify-center items-center'>
-                            <div className='  bg-white w-[22vw] h-[90%] rounded-2xl grid grid-rows-5 p-3'>
+                            <div className='  bg-white lg:w-[22vw] w-[28vw] m-auto h-[90%] rounded-2xl grid grid-rows-5 p-3'>
                                 <Link href={'/hamburguer'} className='w-[100%] bg-red-200 flex justify-center items-center hover:bg-red-700 cursor-pointer rounded-md mb-3'>
                                     <h1  className=' text-black font-semibold text-xl'>Lanches</h1>
                                 </Link>

@@ -4,6 +4,7 @@
     "node": "^21.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sweetalert2": "^11.10.7",
     "tailwind": "^4.0.0",
     "typescript": "^5.4.2"
   }

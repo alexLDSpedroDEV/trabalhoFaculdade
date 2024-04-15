@@ -3,14 +3,22 @@ import React, { useEffect, useState } from 'react'
 import FoodItens, { MeuFood } from '../../components/foods'
 import Image from 'next/image';
 import bebida1 from '@/../../image/bebida1.png'
-
-
 import SideBar from '@/components/sideBar';
 
+import Swal from 'sweetalert2';
+import { CarrinhoProdutos } from '@/components/carrinhoProduts';
 
 function page() {
-    const MandarBackEnd = (data : MeuFood) => {
-        
+
+    
+    const enviarPedido = (props: any) => {
+        CarrinhoProdutos.addNewFoods(props)
+        Swal.fire({
+            title: 'Produto Adicionado ao Carrinho',
+            text: 'O produto foi adicionado ao carrinho com sucesso!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
     }
 
     return (
@@ -30,7 +38,7 @@ function page() {
                                         <h2 className='text-end  text-[25px] font-bold sm:text-[18px]'>$ {item.value}</h2>
                                     </div>
                                     {/* <p>{item.text}</p> */}
-                                    <button className='text-center rounded-md p-4 bg-black sm:p-2 text-yellow sm:text-[12px] ' onClick={() => MandarBackEnd(item)}>ADD TO CART</button>    
+                                    <button className='text-center rounded-md p-4 bg-black sm:p-2 text-yellow sm:text-[12px]' onClick={() => enviarPedido(item)}>ADD TO CART</button>
                                 </div>
                             ))
                         }

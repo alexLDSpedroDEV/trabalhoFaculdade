@@ -4,7 +4,7 @@ import FoodItens from '../../components/foods'
 import Image from 'next/image';
 import porcoes1 from './/../../../image/porcoes1.png'
 import SideBar from '@/components/sideBar';
-
+import Swal from 'sweetalert2';
 
 
 import { CarrinhoProdutos } from '@/components/carrinhoProduts';
@@ -13,9 +13,14 @@ function page() {
 
     const enviarPedido = (props: any) => {
         CarrinhoProdutos.addNewFoods(props)
+        Swal.fire({
+            title: 'Produto Adicionado ao Carrinho',
+            text: 'O produto foi adicionado ao carrinho com sucesso!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
     }
 
-    console.log(FoodItens)
 
     return (
         <div className='bg-black'>

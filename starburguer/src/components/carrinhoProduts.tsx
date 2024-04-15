@@ -11,7 +11,7 @@ export interface MeuFood {
 export class Foods {
     private readonly foods: MeuFood[] = [] ; 
 
-    //adicionar nova comidas
+    
     addNewFoods(foods: MeuFood): void {
         this.foods.push(foods);
     }

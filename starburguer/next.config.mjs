@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      domains: [
+        'images.pexels.com',
+        'img.freepik.com',
+        's1.1zoom.me',
+        'wallpapers.com',
+        'www.wallpapertip.com',
+        's1.1zoom.me'
+      ]
+    }
+  };
+  
+  export default nextConfig;
+  
