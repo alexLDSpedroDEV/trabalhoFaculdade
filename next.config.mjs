@@ -7,7 +7,8 @@ const nextConfig = {
         's1.1zoom.me',
         'wallpapers.com',
         'www.wallpapertip.com',
-        's1.1zoom.me'
+        's1.1zoom.me',
+        'uploads.montage.com'
       ]
     }
   };

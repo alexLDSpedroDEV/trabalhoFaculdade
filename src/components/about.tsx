@@ -12,8 +12,8 @@ function about() {
           <p className="pt-7 pb-12 hidden md:block" >Além dos sabores inigualáveis, a Hamburgueria Retro é um verdadeiro santuário da nostalgia, onde cada detalhe, desde os bancos vermelhos com estofamento de vinil até os brinquedos vintage que decoram as prateleiras, evoca lembranças preciosas de uma era passada. Aqui, não se trata apenas de uma refeição, mas sim de uma jornada no tempo, onde os clientes podem reviver os momentos mais emblemáticos de suas vidas enquanto desfrutam de uma comida reconfortante e genuína. Venha se juntar a nós e faça parte desta história que começou em 1985 e continua a encantar gerações até os dias de hoje.</p>
         </div>
         <div className="grid gap-5 py-5  px-5">
-          <Image className="shadow shadow-xl shadow-black" width={1920} height={1080} src={"https://www.wallpapertip.com/wmimgs/50-503873_beers-bar-wallpaper-bar-background-hd.jpg"} alt="imagem salao do restaurante"></Image>
-          <Image className="shadow shadow-xl shadow-black" width={1920} height={1080} src={"https://s1.1zoom.me/b5655/742/Fast_food_Hamburger_Vegetables_520537_1920x1080.jpg"} alt="imagem salao do restaurante"></Image>
+          <Image className="shadow shadow-xl m-auto shadow-black max-w-[90vw]  max-h-[600px]" width={1920} height={1080} src={"https://uploads.montage.com/uploads/sites/4/2023/07/17122727/Scout-Field-Bar-hero-shot-interior-1920x1080.jpg"} alt="imagem salao do restaurante"></Image>
+          <Image className="shadow shadow-xl m-auto shadow-black max-w-[90vw]  max-h-[600px]" width={1920} height={1080} src={"https://s1.1zoom.me/b5655/742/Fast_food_Hamburger_Vegetables_520537_1920x1080.jpg"} alt="imagem salao do restaurante"></Image>
         </div>
       </section>
   )
